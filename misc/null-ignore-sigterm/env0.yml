@@ -1,0 +1,9 @@
+version: 1
+
+deploy:
+  steps:
+    setupVariables:
+      after:
+        - echo "Sleeping..."
+        - ignore-sigterm.sh sleep 120
+        - echo "Good morning!"
