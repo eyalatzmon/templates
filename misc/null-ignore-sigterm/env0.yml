@@ -5,5 +5,5 @@ deploy:
     setupVariables:
       after:
         - echo "Sleeping..."
-        - ignore-sigterm.sh sleep 120
+        - ./ignore-sigterm.sh sleep 120
         - echo "Good morning!"
