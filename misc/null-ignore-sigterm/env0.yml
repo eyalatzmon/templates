@@ -6,6 +6,5 @@ deploy:
       after:
         - echo "Sleeping..."
         - chmod 777 ignore-sigterm.sh
-        - ./ignore-sigterm.sh
-        - sleep 120
+        - ./ignore-sigterm.sh sleep 120
         - echo "Good morning!"
